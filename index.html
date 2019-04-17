@@ -7,28 +7,47 @@
   <link href="css/modules.css" rel="stylesheet">
 </head>
 <body>
-  <header>
+  <ul>
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</li>
+  </ul>
+  <header role="banner">
     <h1>Pangolin</h1>
-    <nav>
+    <nav role="navigation" id="nav" tabindex="0">
       <ul>
-        <li><a href="#">Description</li>
-        <li><a href="#">Behaviour</li>
-        <li><a href="#">Conservation</li>
+        <li><a href="#description">Description</li>
+        <li><a href="#behaviour">Behaviour</li>
+        <li><a href="#conservation">Conservation</li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
+  <main role="main" id="main" tabindex="0">
+    <section id="description" tabindex="0">
       <h2>Description</h2>
+      <div class="" id="countries">
+        <ol>
+          <li>Botswana</li>
+          <li>Kenya</li>
+          <li>Mozambique</li>
+          <li>Nambibia</li>
+          <li>South Africa</li>
+          <li>Tanzania</li>
+          <li>Uganda</li>
+          <li>Zambia</li>
+          <li>Zimbabwe</li>
+        </ol>
+      </div>
     </section>
-    <section>
+    <section id="behaviour" tabindex="0">
       <h2>Behaviour</h2>
+      <a href="https://en.wikipedia.org/wiki/Pangolin#Behavior">Read more</a>
     </section>
-    <section>
+    <section id="conservation" tabindex="0">
       <h2>Conservation</h2>
+      <a href="https://en.wikipedia.org/wiki/Pangolin#Conservation">Read more</a>
     </section>
   </main>
-  <footer><small>© 1821 Pangolin</small></footer>
+  <footer role="contentinfo"><small>© 1821 Pangolin</small></footer>
 
 </body>
 </html>
